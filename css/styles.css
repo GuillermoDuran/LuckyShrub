@@ -17,7 +17,7 @@ h1 {
     font-size: 2rem;
 }
 
-h2, ul a {
+h2, ul a, p {
     font-size: 1rem;
 }
 
@@ -29,11 +29,9 @@ header > img {
 
 article > img {
     width: 75%;
-    height: 75%;
-    position: relative;
-    margin-left: 12%;
-    margin-right: 12%;
     border-radius: 10px;
+    margin-bottom: 0px;
+    align-self: flex-end;
 }
 
 nav ul {
@@ -62,6 +60,8 @@ nav li {
 
 section {
     display: flex;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 #promotional-content section{
@@ -73,7 +73,12 @@ section {
 }
 
 .info-content {
-    margin: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-around;
 }
 
 article {
@@ -97,4 +102,34 @@ footer div {
 
 #copyr {
     padding-top: 5.5rem;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2, ul a, p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2, ul a, p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2, ul a, p {
+        font-size: 0.7rem;
+    }
 }
