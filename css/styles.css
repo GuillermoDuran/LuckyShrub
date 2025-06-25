@@ -70,6 +70,9 @@ section {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    border-style: dotted;
+    border-color: #17132a;
+    border-radius: 10px;
 }
 
 .info-content {
@@ -104,7 +107,7 @@ footer div {
     padding-top: 5.5rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     h1 {
         font-size: 1.9rem;
     }
@@ -116,20 +119,34 @@ footer div {
 
 @media (max-width: 800px) {
     h1 {
-        font-size: 1.8rem;
-    }
-
-    h2, ul a, p {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 640px) {
-    h1 {
         font-size: 1.7rem;
     }
 
     h2, ul a, p {
         font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 650px) {
+
+    section {
+        width: 75%;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #promotional-content section {
+        width: 75%;
+    }
+
+    .info-content {
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    footer {
+        margin-top: 1rem;
     }
 }
