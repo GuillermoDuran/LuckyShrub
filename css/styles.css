@@ -58,6 +58,13 @@ nav li {
     width: 65px;
 }
 
+main {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+    margin-bottom: 1.5rem;
+}
+
 section {
     display: flex;
     margin-left: 2rem;
@@ -148,5 +155,12 @@ footer div {
     
     footer {
         margin-top: 1rem;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        translateY: 0;
     }
 }
